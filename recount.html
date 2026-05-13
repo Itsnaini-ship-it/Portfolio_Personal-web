@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recount Text</title>
+<link rel="shortcut icon" href="asset/gila.png" type="image/x-icon"/>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+softPink: '#ff9a9e',
+deepPink: '#e04480',
+pastelPink: '#ffd1dc'
+},
+fontFamily: {
+heading: ['Playfair Display', 'serif'],
+body: ['Poppins', 'sans-serif']
+}
+}
+}
+}
+</script>
+
+
+</head>
+<body class="bg-[#05060f] text-white font-body">
+
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] md:w-[85%] flex justify-between items-center px-4 md:px-6 py-2 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 z-50">
+
+<img src="asset/logow.png" class="h-10 md:h-12">
+
+<ul class="hidden md:flex gap-6">
+
+<li>
+<a href="index.html#hero" class="relative text-white group">
+Home
+<span class="absolute left-0 -bottom-1 w-full h-[2px] bg-[#ff758c]"></span>
+</a>
+</li>
+
+<li>
+<a href="index.html#about" class="relative text-white/70 hover:text-white transition group flex flex-col items-center">
+About
+<span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#ff758c] opacity-0 group-hover:opacity-100 transition"></span>
+</a>
+</li>
+
+<li>
+<a href="index.html#services" class="relative text-white/70 hover:text-white transition group flex flex-col items-center">
+Services
+<span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#ff758c] opacity-0 group-hover:opacity-100 transition"></span>
+</a>
+</li>
+
+<li>
+<a href="index.html#card" class="relative text-white/70 hover:text-white transition group flex flex-col items-center">
+Portfolio
+<span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#ff758c] opacity-0 group-hover:opacity-100 transition"></span>
+</a>
+</li>
+
+</ul>
+
+<a href="index.html#contact" class="bg-gradient-to-r from-[#ff758c] to-[#ff7eb3] px-5 py-2 rounded-lg mt-2 text-white inline-block">Contact</a>
+
+<button id="menuBtn" class="md:hidden text-2xl">☰</button>
+
+</nav>
+
+<div class="absolute top-32 left-10 w-40 h-40 rounded-full bg-pink-500/10 blur-[90px]"></div>
+<div class="absolute top-[600px] right-10 w-52 h-52 rounded-full bg-pink-400/10 blur-[100px]"></div>
+<div class="absolute bottom-40 left-1/3 w-60 h-60 rounded-full bg-white/5 blur-[120px]"></div>
+
+<div class="absolute top-32 left-10 w-40 h-40 rounded-full bg-pink-500/10 blur-[90px]"></div>
+<div class="absolute top-[700px] right-10 w-52 h-52 rounded-full bg-pink-400/10 blur-[100px]"></div>
+<div class="absolute bottom-40 left-1/3 w-60 h-60 rounded-full bg-white/5 blur-[120px]"></div>
+
+<section class="pt-40 pb-16 px-[8%] text-center">
+    <p class="tracking-[4px] text-pink-300 text-sm mb-3">PERSONAL PROJECT JOURNEY</p>
+    <h1 class="text-4xl md:text-6xl font-heading bg-gradient-to-r from-white via-pink-200 to-pink-500 text-transparent bg-clip-text mb-5">
+        My Experience of Making a Website
+    </h1>
+    <p class="max-w-3xl mx-auto text-white/50 leading-8">
+        A memorable story about my learning process, challenges, and growth while creating my own portfolio website.
+    </p>
+</section>
+
+<section class="px-[8%] pb-24">
+    <div class="max-w-5xl mx-auto bg-white/5 backdrop-blur-xl border border-white/10 rounded-[30px] p-7 md:p-12 shadow-[0_0_40px_rgba(255,118,140,0.08)]">
+
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-5 border-b border-white/10 pb-8 mb-10">
+            <div>
+                <h3 class="text-2xl font-semibold text-pink-300">Written by: Itsnaini Safa’atul Fitri</h3>
+                <p class="text-white/40 mt-2">Software Engineering Student • Recount Text Project</p>
+            </div>
+            <div class="px-5 py-2 rounded-full border border-pink-400/20 text-pink-200 text-sm">
+                Personal Coding Story
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-heading text-pink-300 mb-5">Orientation</h2>
+
+<p class="text-white/60 leading-9 mb-6 text-justify">
+    Last month, I worked on a personal project to create my own portfolio website. As a Software Engineering student, I wanted to make a website that could represent my skills, creativity, and identity in one place. This portfolio was not only made for school practice, but also as a digital space where I could show my coding ability, design taste, and the projects I have learned to build.
+</p>
+
+<p class="text-white/60 leading-9 mb-10 text-justify">
+    At first, I thought building a personal portfolio would be easy because I could design it based on my own ideas. However, after starting the process, I realized that making a website look modern, elegant, and interactive required a lot of patience, time, and detailed revisions. I wanted every section to feel aesthetic and professional, so I knew I had to work seriously on it.
+</p>
+
+<div class="bg-pink-500/10 border-l-4 border-pink-400 px-6 py-5 rounded-xl mb-10 italic text-pink-100">
+    “Every pixel, every animation, and every line of code in this portfolio carries a part of my dedication, imagination, and endless revisions.”
+</div>
+
+       <h2 class="text-3xl font-heading text-pink-300 mb-5">Events</h2>
+
+        <p class="text-white/60 leading-9 mb-6 text-justify">
+            I had difficulty finding a website design that matched my style and looked attractive at the same time. To solve this problem, I searched for many design inspirations on the internet. I visited portfolio websites, looked at Pinterest ideas, and observed how professional websites combined colors, typography, animations, and layout balance. After that, I started planning the sections of my own website, such as hero, about, services, portfolio cards, and contact. I carefully chose pink tones and dark backgrounds because I wanted my website to look soft but still professional.
+        </p>
+        <p class="text-white/60 leading-9 mb-6 text-justify">
+            Then, I began coding with HTML, Tailwind CSS, and JavaScript. In the beginning, everything felt confusing because many codes did not work as I wanted. Sometimes the navbar was broken, the images were not aligned, the sections looked flat, and the animations failed. Even a very small typo could ruin the whole layout. That situation often made me frustrated because I spent hours fixing one small problem.
+        </p>
+
+        <p class="text-white/60 leading-9 mb-6 text-justify">
+            There were moments when I felt tired and stressed because the website design in my mind did not match the result on the screen. I revised many parts repeatedly, changed colors, moved elements, and rebuilt sections from the beginning. I wanted the portfolio to look aesthetic and impressive, so I kept trying different ideas until it looked better.
+        </p>
+
+        <p class="text-white/60 leading-9 mb-6 text-justify">
+            Because I was still learning and often got stuck, I also used artificial intelligence as my learning assistant. AI helped me explain coding errors, suggest better layouts, give animation ideas, and show examples of cleaner code. Whenever I felt confused, AI became a place where I could ask questions quickly. From there, I learned many coding tricks that I did not know before.
+        </p>
+
+        <p class="text-white/60 leading-9 mb-6 text-justify">
+            I did not only copy the suggestions, but I also adjusted them to fit my own design concept. Sometimes I combined my creativity with AI recommendations to make the website more attractive. This made the process easier, but it still needed my patience to arrange every section manually. Slowly, my website started to look more alive and modern.
+        </p>
+
+        <p class="text-white/60 leading-9 mb-6 text-justify">
+            I also watched tutorials on You Tube, searched for references, and discussed with my AI. Every time an error was solved, I felt relieved and excited to continue. Little by little, the messy design became organized, the animations worked, and the project finally looked close to what I had imagined.
+        </p>
+
+        <p class="text-white/60 leading-9 mb-10 text-justify">
+            After many revisions and long hours of coding, I successfully completed the portfolio website. Seeing the final result made me feel proud because all the difficulties, confusion, and stress turned into a satisfying outcome. It was one of the moments that made me realize that hard work truly gives results.
+        </p>
+
+        <h2 class="text-3xl font-heading text-pink-300 mb-5">Reorientation</h2>
+
+        <p class="text-white/60 leading-9 mb-6 text-justify">
+            In conclusion, this project gave me a very meaningful and unforgettable experience. I learned that creating a website is not only about understanding HTML, CSS, or JavaScript, but also about being patient, solving problems, and staying creative. Every challenge taught me something new.
+        </p>
+
+        <p class="text-white/60 leading-9 mb-6 text-justify">
+            I also learned that technology such as artificial intelligence can become a helpful partner in learning if we use it wisely. AI guided me whenever I felt stuck, but the creativity, decisions, and final adjustments still came from my own effort. This combination made me grow faster as a student.
+        </p>
+
+        <p class="text-white/60 leading-9 mb-10 text-justify">
+            Through this project, I became more confident in my ability to build something by myself. Even though the process was tiring, I truly enjoyed every lesson behind it. I hope in the future I can continue improving my web development skills and create websites that are more creative, interactive, and professional.
+        </p>
+
+        <div class="mt-8 text-center text-pink-200 italic text-lg">
+            “Every error taught me patience, every revision taught me creativity, and every finished section taught me confidence.”
+        </div>
+
+    </div>
+</section>
+    
+<footer class="w-full bg-black px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-6 border-t border-pink-500/30">
+
+  <div class="flex items-center gap-6">
+
+    <img src="asset/logow.png" class="w-16 h-16 object-contain">
+
+    <div class="w-[2px] h-10 bg-pink-500/40"></div>
+
+    <p class="text-gray-300 text-sm">
+      Copyright © 2026 - <span class="text-pink-400">All right reserved</span>
+    </p>
+
+  </div>
+
+  <div class="flex items-center gap-4">
+
+    <a href="https://www.tiktok.com/@dimsamsapusapu" target="_blank" rel="noopener noreferrer"
+    class="w-12 h-12 flex items-center justify-center rounded-full border border-pink-500/40 hover:bg-pink-500/20 transition">
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-pink-300" viewBox="0 0 24 24">
+        <path d="M12.75 2h2.25c.16 2.02 1.51 3.71 3.5 4.24v2.33c-1.3-.02-2.55-.43-3.5-1.17v6.91c0 3.38-2.62 6.19-6 6.19-3.38 0-6-2.81-6-6.19s2.62-6.19 6-6.19c.39 0 .77.04 1.14.12v2.41a3.7 3.7 0 00-1.14-.18c-2.04 0-3.71 1.71-3.71 3.84s1.67 3.84 3.71 3.84c2.04 0 3.71-1.71 3.71-3.84V2z"/>
+      </svg>
+
+    </a>
+
+    <a href="https://www.instagram.com/luvlyy_bun" target="_blank" rel="noopener noreferrer"
+    class="w-12 h-12 flex items-center justify-center rounded-full border border-pink-500/40 hover:bg-pink-500/20 transition">
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-pink-300" viewBox="0 0 24 24">
+        <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-2.76-5-5H7zm5 4.5A5.5 5.5 0 1112 17.5 5.5 5.5 0 0112 6.5zm6.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/>
+      </svg>
+
+    </a>
+
+    <a href="https://www.youtube.com/@edward" target="_blank" rel="noopener noreferrer"
+    class="w-12 h-12 flex items-center justify-center rounded-full border border-pink-500/40 hover:bg-pink-500/20 transition">
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-pink-300" viewBox="0 0 24 24">
+        <path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.4 3.5 12 3.5 12 3.5s-7.4 0-9.4.6a3 3 0 00-2.1 2.1A31.6 31.6 0 000 12a31.6 31.6 0 00.5 5.8 3 3 0 002.1 2.1c2 .6 9.4.6 9.4.6s7.4 0 9.4-.6a3 3 0 002.1-2.1A31.6 31.6 0 0024 12a31.6 31.6 0 00-.5-5.8zM9.75 15.5v-7l6 3.5-6 3.5z"/>
+      </svg>
+
+    </a>
+
+  </div>
+
+</footer>
+
+</body>
+</html>

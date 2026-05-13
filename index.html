@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="shortcut icon" href="./asset/gila.png" type="image/x-icon" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.88/build/spline-viewer.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+</head>
+
+<body class="bg-[#05060f] text-white font-body">
+
+  <nav
+    class="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] md:w-[85%] flex justify-between items-center px-4 md:px-6 py-2 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 z-50">
+
+    <img src="asset/logow.png" class="h-10 md:h-12">
+
+    <ul class="hidden md:flex gap-6">
+
+      <li>
+        <a href="#hero" class="relative text-white group">
+          Home
+          <span class="absolute left-0 -bottom-1 w-full h-[2px] bg-[#ff758c]"></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#about" class="relative text-white/70 hover:text-white transition group flex flex-col items-center">
+          About
+          <span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#ff758c] opacity-0 group-hover:opacity-100 transition"></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#services" class="relative text-white/70 hover:text-white transition group flex flex-col items-center">
+          Services
+          <span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#ff758c] opacity-0 group-hover:opacity-100 transition"></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#card" class="relative text-white/70 hover:text-white transition group flex flex-col items-center">
+          Portfolio
+          <span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#ff758c] opacity-0 group-hover:opacity-100 transition"></span>
+        </a>
+      </li>
+
+    </ul>
+
+    <div class="flex items-center gap-3">
+      <a href="#contact"
+        class="hidden md:block bg-gradient-to-r from-[#ff758c] to-[#ff7eb3] px-5 py-2 rounded-lg text-white">Contact</a>
+      <button id="menuBtn" class="md:hidden text-2xl text-white relative z-[999]">☰</button>
+    </div>
+
+    <div id="mobileMenu"
+      class="fixed top-0 left-0 w-full h-screen bg-transparent backdrop-blur-lg flex flex-col items-center justify-center gap-8 text-white text-lg transform translate-x-full transition duration-300 z-[998]">
+
+      <a href="#hero" class="menuLink relative group">
+        Home
+        <span class="absolute left-0 -bottom-1 w-full h-[2px] bg-[#ff758c]"></span>
+      </a>
+
+      <a href="#about" class="menuLink flex flex-col items-center group">
+        About
+        <span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#ff758c] opacity-0 group-hover:opacity-100 transition"></span>
+      </a>
+
+      <a href="#services" class="menuLink flex flex-col items-center group">
+        Services
+        <span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#ff758c] opacity-0 group-hover:opacity-100 transition"></span>
+      </a>
+
+      <a href="#card" class="menuLink flex flex-col items-center group">
+        Portfolio
+        <span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#ff758c] opacity-0 group-hover:opacity-100 transition"></span>
+      </a>
+
+      <a href="#contact" class="bg-gradient-to-r from-[#ff758c] to-[#ff7eb3] px-6 py-2 rounded-lg">Contact</a>
+
+    </div>
+
+  </nav>
+
+  <section id="hero" class="h-screen relative overflow-hidden">
+
+    <div class="max-w-6xl mx-auto px-6 h-full flex flex-col justify-center">
+      <div
+        class="pointer-events-none absolute bottom-[-15%] left-1/2 -translate-x-1/2 w-[90%] h-[50%] blur-[60px] z-0 glowPulse bg-[radial-gradient(circle,rgba(255,118,140,0.5)_0%,rgba(255,255,255,0.2)_30%,rgba(255,126,179,0.1)_60%,transparent_80%)]">
+      </div>
+
+      <div
+        class="pointer-events-none absolute bottom-0 left-0 w-full h-[200px] blur-[40px] z-0 glowPulse2 bg-[radial-gradient(circle_at_bottom_left,rgba(255,118,140,0.4)_0%,transparent_70%),radial-gradient(circle_at_bottom_right,rgba(255,126,179,0.3)_0%,transparent_70%)]">
+      </div>
+
+      <div class="absolute inset-0 -z-10 pointer-events-none flex items-end justify-center">
+        <div class="w-full max-w-[1100px] h-[300px] sm:h-[400px] md:h-[550px] lg:h-[650px]">
+          <spline-viewer url="https://prod.spline.design/XV0-ybvoSa131Cfa/scene.splinecode"
+            class="w-full h-full"></spline-viewer>
+        </div>
+      </div>
+
+      <h2 id="heroHello" class="text-lg md:text-2xl text-white/80 tracking-[3px] min-h-[35px] opacity-0"></h2>
+
+      <h1 id="heroTitle" class="text-4xl sm:text-6xl md:text-8xl font-heading leading-tight min-h-[110px] opacity-0">
+        <span id="typingTitle"></span><span class="typingCursor">|</span>
+      </h1>
+
+      <p id="heroSub" class="mt-4 md:mt-6 max-w-[520px] text-white/60 leading-relaxed min-h-[70px] opacity-0"></p>
+
+      <div id="heroButtons" class="mt-8 flex gap-5 opacity-0 translate-y-8">
+        <a href="#card" class="heroBtn1">View Project</a>
+        <a href="recount.html" class="heroBtn2">My Experience</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="services" class="relative text-white bg-[#05060f] overflow-hidden py-28">
+    <div
+      class="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[600px] h-[500px] blur-[90px] z-0 glowPulse3
+bg-[radial-gradient(circle,rgba(255,118,140,0.6)_0%,rgba(255,126,179,0.35)_30%,rgba(255,0,128,0.15)_60%,transparent_80%)]">
+    </div>
+    <div class="absolute left-[-10%] bottom-0 w-[450px] h-[350px] blur-[100px] z-0 glowPulse4
+bg-[radial-gradient(circle,rgba(255,118,140,0.35)_0%,transparent_70%)]">
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 relative z-10">
+
+      <div class="text-center mb-20">
+
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-semibold">
+          My <span class="text-pink-300">Services</span>
+        </h1>
+
+        <p class="text-gray-400 heroFade3">
+          Digital solutions that I can provide
+        </p>
+
+      </div>
+
+      <div class="flex flex-wrap justify-center items-end gap-8">
+
+        <div class="serviceCard float-slow w-[310px] bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 text-center
+      shadow-[0_0_35px_rgba(255,182,193,0.18)]
+      hover:scale-110 hover:-translate-y-4 hover:rotate-1">
+
+          <div class="w-14 h-1 rounded-full bg-gradient-to-r from-pink-400 to-transparent mx-auto mb-6"></div>
+
+          <div class="w-16 h-16 mx-auto mb-5 flex items-center justify-center rounded-full bg-pink-300/20 serviceIcon">
+
+            <svg class="w-8 h-8 text-pink-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="3" y="4" width="18" height="12" rx="2" />
+              <path d="M8 20h8" />
+            </svg>
+
+          </div>
+
+          <h2 class="text-xl font-semibold text-pink-200 mb-3">
+            Web Design
+          </h2>
+
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Creating modern, elegant, and user-friendly website visuals with aesthetic layouts.
+          </p>
+
+        </div>
+
+        <div class="serviceCard float-mid md:-mt-10 w-[310px] bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 text-center
+      shadow-[0_0_45px_rgba(255,182,193,0.22)]
+      hover:scale-110 hover:-translate-y-4 hover:rotate-1">
+
+          <div class="w-14 h-1 rounded-full bg-gradient-to-r from-pink-400 to-transparent mx-auto mb-6"></div>
+
+          <div class="w-16 h-16 mx-auto mb-5 flex items-center justify-center rounded-full bg-pink-300/20 serviceIcon">
+
+            <svg class="w-8 h-8 text-pink-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M16 18l6-6-6-6" />
+              <path d="M8 6l-6 6 6 6" />
+            </svg>
+
+          </div>
+
+          <h2 class="text-xl font-semibold text-pink-200 mb-3">
+            UI/UX Design
+          </h2>
+
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Designing intuitive interfaces and smooth user experiences that feel modern and interactive.
+          </p>
+
+        </div>
+
+        <div class="serviceCard float-fast w-[310px] bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 text-center
+      shadow-[0_0_35px_rgba(255,182,193,0.18)]
+      hover:scale-110 hover:-translate-y-4 hover:rotate-1">
+
+          <div class="w-14 h-1 rounded-full bg-gradient-to-r from-pink-400 to-transparent mx-auto mb-6"></div>
+
+          <div class="w-16 h-16 mx-auto mb-5 flex items-center justify-center rounded-full bg-pink-300/20 serviceIcon">
+
+            <svg class="w-8 h-8 text-pink-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M9 19c-5 2-5-2-7-3 2 0 3-1 4-2l7-7c2-2 5-2 7 0s2 5 0 7l-7 7c-1 1-2 2-2 4-1-2-3-2-5-1z" />
+              <path d="M15 9l-6 6" />
+            </svg>
+
+          </div>
+
+          <h2 class="text-xl font-semibold text-pink-200 mb-3">
+            Web Development
+          </h2>
+
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Building responsive and functional websites with clean structure and smooth performance.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="relative bg-[#05060f] text-white py-20 overflow-hidden">
+
+    <div
+      class="absolute left-[-10%] top-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-pink-500/10 blur-[120px] rounded-full">
+    </div>
+
+    <div class="absolute right-[-10%] bottom-0 w-[400px] h-[400px] bg-pink-300/10 blur-[120px] rounded-full">
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center relative z-10">
+
+      <div class="flex justify-center">
+        <div class="relative aboutPhotoWrap">
+
+          <div class="absolute w-[430px] h-[430px] rounded-full bg-pink-500/10 blur-[100px]"></div>
+
+          <div class="absolute w-[360px] h-[360px] rounded-full border border-pink-300/20 spinRing"></div>
+
+          <div class="absolute w-[400px] h-[400px] rounded-full border border-pink-300/10"></div>
+
+          <div class="spark s1"></div>
+          <div class="spark s2"></div>
+          <div class="spark s3"></div>
+
+          <div
+            class="w-[300px] h-[300px] rounded-full overflow-hidden border-[6px] border-pink-300/20 shadow-[0_0_70px_rgba(255,182,193,0.3)] relative z-10">
+
+            <img src="asset/saya.png" class="w-full h-full object-cover">
+
+          </div>
+
+        </div>
+      </div>
+
+      <div>
+
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-semibold">
+          About <span class="text-pink-300">Me</span>
+        </h1>
+
+        <p class="text-gray-300 leading-relaxed mb-8">
+          I am a Software Engineering student who is passionate about Web Development and UI/UX Design.
+          I love exploring modern technologies, building beautiful interfaces, and turning creative ideas into digital
+          projects.
+          You can also check my
+          <a href="recount.html" class="text-pink-300 underline hover:text-pink-400">Recount Text</a>.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+
+          <div class="aboutCard">
+
+            <div class="aboutIcon">
+              <svg class="w-5 h-5 text-pink-300" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+              </svg>
+            </div>
+
+            <div>
+              <p class="text-gray-400 text-sm">Full Name</p>
+              <p class="text-white text-sm">Itsnaini Safa'atul Fitri</p>
+            </div>
+
+          </div>
+
+          <div class="aboutCard">
+
+            <div class="aboutIcon">
+              <svg class="w-5 h-5 text-pink-300" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M16 11c1.66 0 3-1.34 3-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zM8 11c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zM8 13c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+              </svg>
+            </div>
+
+            <div>
+              <p class="text-gray-400 text-sm">Class</p>
+              <p class="text-white text-sm">X RPL 2</p>
+            </div>
+
+          </div>
+
+          <div class="aboutCard">
+
+            <div class="aboutIcon">
+              <svg class="w-5 h-5 text-pink-300" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" />
+              </svg>
+            </div>
+
+            <div>
+              <p class="text-gray-400 text-sm">Age</p>
+              <p class="text-white text-sm">16 Years Old</p>
+            </div>
+
+          </div>
+
+          <div class="aboutCard">
+
+            <div class="aboutIcon">
+              <svg class="w-5 h-5 text-pink-300" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
+              </svg>
+            </div>
+
+            <div>
+              <p class="text-gray-400 text-sm">School</p>
+              <p class="text-white text-sm">SMKN 1 Tengaran</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="relative text-white py-20 px-5 overflow-hidden bg-gradient-to-br from-[#05060f] via-[#1a0a14] 
+to-[#ff9aa2]">
+
+    <div
+      class="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[500px] h-[500px] blur-[120px] bg-pink-500 opacity-30 rounded-full">
+    </div>
+
+    <div class="absolute left-0 bottom-0 w-[400px] h-[300px] blur-[100px] bg-pink-300 opacity-20 rounded-full"></div>
+    <div id="bar" class="max-w-4xl mx-auto mb-24 px-6">
+
+      <div class="skillHeading">
+        <h2 class="text-center text-3xl md:text-4xl font-semibold mb-3 text-white">
+          Skill <span class="text-pink-400">Progress</span>
+        </h2>
+
+        <p class="text-center text-gray-400 mb-14">
+          My development and design abilities
+        </p>
+      </div>
+
+      <div class="space-y-8">
+
+        <div class="flex items-center gap-4">
+
+          <i class="devicon-html5-plain colored text-4xl"></i>
+
+          <div class="w-full">
+            <div class="flex justify-between mb-3 text-sm md:text-base">
+              <span>HTML</span>
+              <span>85%</span>
+            </div>
+
+            <div class="progressLine">
+              <div class="progressFill" data-width="85%"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="flex items-center gap-4">
+
+          <i class="devicon-css3-plain colored text-4xl"></i>
+
+          <div class="w-full">
+            <div class="flex justify-between mb-3 text-sm md:text-base">
+              <span>CSS</span>
+              <span>81%</span>
+            </div>
+
+            <div class="progressLine">
+              <div class="progressFill" data-width="81%"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="flex items-center gap-4">
+
+          <i class="devicon-javascript-plain colored text-4xl"></i>
+
+          <div class="w-full">
+            <div class="flex justify-between mb-3 text-sm md:text-base">
+              <span>JavaScript</span>
+              <span>45%</span>
+            </div>
+
+            <div class="progressLine">
+              <div class="progressFill" data-width="45%"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="flex items-center gap-4">
+
+          <i class="devicon-tailwindcss-original colored text-4xl"></i>
+
+          <div class="w-full">
+            <div class="flex justify-between mb-3 text-sm md:text-base">
+              <span>Tailwind CSS</span>
+              <span>80%</span>
+            </div>
+
+            <div class="progressLine">
+              <div class="progressFill" data-width="80%"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="flex items-center gap-4">
+
+          <i class="devicon-bootstrap-plain colored text-4xl"></i>
+
+          <div class="w-full">
+            <div class="flex justify-between mb-3 text-sm md:text-base">
+              <span>Bootstrap</span>
+              <span>65%</span>
+            </div>
+
+            <div class="progressLine">
+              <div class="progressFill" data-width="65%"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="card" class="mb-20">
+
+      <h2 class="text-center text-3xl font-bold text-white mb-12">
+        My <span class="text-pink-400">Project</span>
+      </h2>
+
+      <div class="max-w-6xl mx-auto">
+        <div class="flex gap-6 overflow-x-auto custom-scroll scroll-smooth snap-x snap-mandatory pb-2">
+
+          <div
+            class="min-w-[80%] sm:min-w-[60%] md:min-w-[32%] snap-start bg-black/40 rounded-2xl border border-pink-400/20 shadow-[0_0_30px_rgba(255,105,180,0.2)] p-4">
+            <img src="asset/portfolio-1.png" class="rounded-xl mb-4 h-40 w-full object-cover">
+            <h3 class="text-white font-semibold text-lg">Project 1</h3>
+            <p class="text-gray-400 text-sm mb-4">This Web is My First Group Projects in semester 1.</p>
+            <a href="https://lailascode.github.io/Project-Collaboration-/">
+              <button class="bg-pink-500 hover:bg-pink-600 text-white text-sm px-4 py-2 rounded-full">
+                View Project
+              </button>
+            </a>
+          </div>
+
+          <div
+            class="min-w-[80%] sm:min-w-[60%] md:min-w-[32%] snap-start bg-black/40 rounded-2xl border border-pink-400/20 shadow-[0_0_30px_rgba(255,105,180,0.2)] p-4">
+            <img src="asset/portfolio-2.png" class="rounded-xl mb-4 h-40 w-full object-cover">
+            <h3 class="text-white font-semibold text-lg">Project 2</h3>
+            <p class="text-gray-400 text-sm mb-4">Designed with visual balance, hover effects, and user-friendly
+              experience.</p>
+            <a href="https://itsnaini-ship-it.github.io/xpplg2_tugas-terakhir-bootstrap/">
+              <button class="bg-pink-500 hover:bg-pink-600 text-white text-sm px-4 py-2 rounded-full">
+                View Project
+              </button>
+            </a>
+          </div>
+
+          <div
+            class="min-w-[80%] sm:min-w-[60%] md:min-w-[32%] snap-start bg-black/40 rounded-2xl border border-pink-400/20 shadow-[0_0_30px_rgba(255,105,180,0.2)] p-4">
+            <img src="asset/portfolio-3.png" class="rounded-xl mb-4 h-40 w-full object-cover">
+            <h3 class="text-white font-semibold text-lg">Project 3</h3>
+            <p class="text-gray-400 text-sm mb-4">A personal showcase project focused on modern UI style and elegant
+              structure.</p>
+            <a href="https://lailascode.github.io/environment/">
+              <button class="bg-pink-500 hover:bg-pink-600 text-white text-sm px-4 py-2 rounded-full">
+                View Project
+              </button>
+            </a>
+          </div>
+
+          <div
+            class="min-w-[80%] sm:min-w-[60%] md:min-w-[32%] snap-start bg-black/40 rounded-2xl border border-pink-400/20 shadow-[0_0_30px_rgba(255,105,180,0.2)] p-4">
+            <img src="asset/portfolio-4.png" class="rounded-xl mb-4 h-40 w-full object-cover">
+            <h3 class="text-white font-semibold text-lg">Project 4</h3>
+            <p class="text-gray-400 text-sm mb-4">Combining transition effects, responsive components, and engaging
+              interactions.</p>
+            <a href="https://itsnaini-ship-it.github.io/My_website-gw/">
+              <button class="bg-pink-500 hover:bg-pink-600 text-white text-sm px-4 py-2 rounded-full">
+                View Project
+              </button>
+            </a>
+          </div>
+
+          <div
+            class="min-w-[80%] sm:min-w-[60%] md:min-w-[32%] snap-start bg-black/40 rounded-2xl border border-pink-400/20 shadow-[0_0_30px_rgba(255,105,180,0.2)] p-4">
+            <img src="asset/portfolio-5.png" class="rounded-xl mb-4 h-40 w-full object-cover">
+            <h3 class="text-white font-semibold text-lg">Project 5</h3>
+            <p class="text-gray-400 text-sm mb-4">Built using HTML, CSS, and Tailwind with emphasis on clean visuals and
+              functionality.</p>
+            <a href="https://itsnaini-ship-it.github.io/Tugas_5-semester-2/">
+              <button class="bg-pink-500 hover:bg-pink-600 text-white text-sm px-4 py-2 rounded-full">
+                View Project
+              </button>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div id="contact" class="max-w-5xl mx-auto mt-20">
+
+      <h2 class="text-center text-2xl font-semibold mb-2">
+        Contact <span class="text-pink-400">Me</span>
+      </h2>
+      <p class="text-center text-gray-400 mb-10">Let's Get In Touch....</p>
+
+      <div
+        class="grid md:grid-cols-2 gap-6 bg-black/40 border border-white/10 rounded-2xl p-6 shadow-[0_0_40px_rgba(255,182,193,0.15)]">
+
+        <div class="space-y-4">
+
+          <a href="https://instagram.com/sfaaa_itsn" target="_blank"
+            class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-pink-400/50 hover:bg-pink-500/10 transition">
+
+            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-pink-500/20">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-pink-300" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 4.5A5.5 5.5 0 1112 17.5 5.5 5.5 0 0112 6.5zm6.5-.8a1.3 1.3 0 11-2.6 0 1.3 1.3 0 012.6 0z" />
+              </svg>
+            </div>
+
+            <div>
+              <p class="text-white text-sm">Instagram</p>
+              <p class="text-gray-400 text-sm">@sfaaa_itsn</p>
+            </div>
+
+          </a>
+
+          <a href="https://tiktok.com/@dimsamsapusapu" target="_blank"
+            class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-pink-400/50 hover:bg-pink-500/10 transition">
+
+            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-pink-500/20">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-pink-300" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M12.75 2h2.25c.16 2.02 1.51 3.71 3.5 4.24v2.33c-1.3-.02-2.55-.43-3.5-1.17v6.91c0 3.38-2.62 6.19-6 6.19-3.38 0-6-2.81-6-6.19s2.62-6.19 6-6.19c.39 0 .77.04 1.14.12v2.41a3.7 3.7 0 00-1.14-.18c-2.04 0-3.71 1.71-3.71 3.84s1.67 3.84 3.71 3.84c2.04 0 3.71-1.71 3.71-3.84V2z" />
+              </svg>
+            </div>
+
+            <div>
+              <p class="text-white text-sm">TikTok</p>
+              <p class="text-gray-400 text-sm">@dimsamsapusapu</p>
+            </div>
+
+          </a>
+
+          <a href="tel:+6285702558572"
+            class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-pink-400/50 hover:bg-pink-500/10 transition">
+
+            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-pink-500/20">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-pink-300" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V21c0 .6-.4 1-1 1C10.3 22 2 13.7 2 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-2.2 2.2z" />
+              </svg>
+            </div>
+
+            <div>
+              <p class="text-white text-sm">Contact</p>
+              <p class="text-gray-400 text-sm">+62 857-0255-8572</p>
+            </div>
+
+          </a>
+
+          <a href="mailto:e56871028@gmail.com"
+            class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-pink-400/50 hover:bg-pink-500/10 transition">
+
+            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-pink-500/20">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-pink-300" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+              </svg>
+            </div>
+
+            <div>
+              <p class="text-white text-sm">Email</p>
+              <p class="text-gray-400 text-sm">e56871028@gmail.com</p>
+            </div>
+
+          </a>
+
+        </div>
+
+        <form id="contact-form" class="p-4 rounded-xl bg-white/5 border border-white/10">
+
+          <div class="grid grid-cols-2 gap-3 mb-3">
+            <input type="text" name="name" required
+              class="bg-black/40 p-2 rounded text-sm outline-none text-white w-full" placeholder="Your Full Name">
+            <input type="email" name="email" required
+              class="bg-black/40 p-2 rounded text-sm outline-none text-white w-full" placeholder="Your Email">
+          </div>
+
+          <input type="text" name="subject" required
+            class="w-full bg-black/40 p-2 rounded text-sm outline-none mb-3 text-white" placeholder="Subject">
+
+          <textarea name="message" required
+            class="w-full bg-black/40 p-2 rounded text-sm outline-none mb-3 h-24 text-white"
+            placeholder="Message"></textarea>
+
+          <button type="submit" class="px-4 py-2 bg-pink-500 rounded text-sm hover:bg-pink-400 transition">
+            Send Message
+          </button>
+
+        </form>
+
+        <div id="toast" class="hidden fixed bottom-5 right-5 bg-pink-500 text-white px-4 py-2 rounded-lg shadow-lg">
+          Message sent successfully 💌
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer
+    class="w-full bg-black px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-6 border-t border-pink-500/30">
+
+    <div class="flex items-center gap-6">
+
+      <img src="asset/logow.png" class="w-16 h-16 object-contain">
+
+      <div class="w-[2px] h-10 bg-pink-500/40"></div>
+
+      <p class="text-gray-300 text-sm">
+        Copyright © 2026 - <span class="text-pink-400">All right reserved</span>
+      </p>
+
+    </div>
+
+    <div class="flex items-center gap-4">
+
+      <a href="https://www.tiktok.com/@dimsamsapusapu" target="_blank" rel="noopener noreferrer"
+        class="w-12 h-12 flex items-center justify-center rounded-full border border-pink-500/40 hover:bg-pink-500/20 transition">
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-pink-300" viewBox="0 0 24 24">
+          <path
+            d="M12.75 2h2.25c.16 2.02 1.51 3.71 3.5 4.24v2.33c-1.3-.02-2.55-.43-3.5-1.17v6.91c0 3.38-2.62 6.19-6 6.19-3.38 0-6-2.81-6-6.19s2.62-6.19 6-6.19c.39 0 .77.04 1.14.12v2.41a3.7 3.7 0 00-1.14-.18c-2.04 0-3.71 1.71-3.71 3.84s1.67 3.84 3.71 3.84c2.04 0 3.71-1.71 3.71-3.84V2z" />
+        </svg>
+
+      </a>
+
+      <a href="https://www.instagram.com/sfaaa_itsn" target="_blank" rel="noopener noreferrer"
+        class="w-12 h-12 flex items-center justify-center rounded-full border border-pink-500/40 hover:bg-pink-500/20 transition">
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-pink-300" viewBox="0 0 24 24">
+          <path
+            d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-2.76-5-5H7zm5 4.5A5.5 5.5 0 1112 17.5 5.5 5.5 0 0112 6.5zm6.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z" />
+        </svg>
+
+      </a>
+
+      <a href="https://www.youtube.com/@edward" target="_blank" rel="noopener noreferrer"
+        class="w-12 h-12 flex items-center justify-center rounded-full border border-pink-500/40 hover:bg-pink-500/20 transition">
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-pink-300" viewBox="0 0 24 24">
+          <path
+            d="M23.5 6.2a3 3 0 00-2.1-2.1C19.4 3.5 12 3.5 12 3.5s-7.4 0-9.4.6a3 3 0 00-2.1 2.1A31.6 31.6 0 000 12a31.6 31.6 0 00.5 5.8 3 3 0 002.1 2.1c2 .6 9.4.6 9.4.6s7.4 0 9.4-.6a3 3 0 002.1-2.1A31.6 31.6 0 0024 12a31.6 31.6 0 00-.5-5.8zM9.75 15.5v-7l6 3.5-6 3.5z" />
+        </svg>
+
+      </a>
+
+    </div>
+
+  </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
